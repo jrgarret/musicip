@@ -1,6 +1,9 @@
 FROM ubuntu:bionic
 
 ENV DEBIAN_FRONTEND noninteractive
+ENV TZ America/Chicago
+ENV PUID 1026
+ENV GUID 100
 
 # Install 32 bits libraries
 RUN apt-get update && \
